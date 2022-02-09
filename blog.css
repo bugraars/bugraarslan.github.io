@@ -1,0 +1,158 @@
+body{
+    
+}
+.icon-lg{
+    font-size: 2rem;
+}
+/* Hover ZOOM for images */
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.zoom:hover {
+    -ms-transform: scale(1.02); /* IE 9 */
+    -webkit-transform: scale(1.02); /* Safari 3-8 */
+    transform: scale(1.02); 
+}
+.tag{
+    background-color: #3a3a3a!important;
+    color: white!important;   
+}
+.top-bar{
+    background-color: #3a3a3a;
+    padding: 0.4%;
+}
+header{
+    margin: 1em;
+}
+header h1{
+    text-align: center;
+    font-family: sacramento;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #3a3a3a;
+}
+header a{
+    text-decoration: none;
+}
+/* CAROUSEL */
+.carousel img{
+    border-radius: 4px;
+}
+/* SOL TARAF CONTENT */
+.left-content{
+    border-radius: 4px;
+    transition: 0s background-color;
+    /* border: #3a3a3a 1px solid; */
+    margin-bottom: 2%;
+}
+.left-content:hover{
+    background-color: #e7e7e7;    
+    transition-delay:0.1s;
+}
+
+/* medianın olduğu DİVe müdahale eden class */
+.media-div{
+    border-radius: 5px;
+    border: #3a3a3a 1px solid;
+    padding: 0px !important;
+
+}
+/* media dosyasına müdahale eden class */
+.media-box{
+    border-radius: 4px;
+    width:100% ;
+    height:100% ;
+}
+
+/* title ve paragafın olduğu DİVe müdahale eden class */
+.content-div{
+    border-radius: 0px  4px  4px 0px;
+    /* border: #3a3a3a 1px solid; */
+}
+.content-div h3{
+    margin: 3px;
+    margin-left: 0px;
+    font-size: 1.5rem;
+}
+.content-div a{
+    font-size: 10px !important;
+    padding: 3px;
+}
+
+.content-tag{
+    background-color: #3a3a3a!important;
+    color: white!important;
+}
+
+/*SAĞ TARAF CARD */
+.cards{
+    border-radius: 4px;
+    background-color: white;
+    border: #3a3a3a 1px solid;
+}
+.cards-head{
+    
+    padding: 2%;
+}
+.cards-head img{
+    padding: 0%;
+    border-radius: 50%;
+}
+.cards-title{
+    text-align: center;
+    color:#3a3a3a;
+}
+.cards-body{
+    padding: 1%;
+}
+.cards-body p{
+    padding: 0%;
+    text-align: center;
+}
+.cards-body h3{
+    padding: 0%;
+    text-align: center;
+}
+.cards-link{
+    padding-bottom: 2%;
+}
+.cards-link a{
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 2%;
+}
+.linkedin:hover{
+    color: blue;
+}
+.instagram:hover{
+    color: #e83d5d;
+}
+.dribbble:hover{
+    color: #fa72a2;
+}
+.youtube:hover{
+    color: red;
+}
+.contact-cards{
+    margin-top: 3%;
+    border-radius: 4px;
+    padding: 4% 2%;
+    background-color: white;
+    border: #3a3a3a 1px solid;
+}
+.contact-form{
+    padding: 2%;
+    background-color: #3a3a3a!important;
+    color: white!important;
+}
+footer{
+    margin-top: 10px;
+    padding: 1%;
+    background-color: #3a3a3a;
+}
+footer h4{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
