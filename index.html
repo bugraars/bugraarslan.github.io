@@ -6,208 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buğra Arslan</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
-    <link rel="manifest" href="ico/site.webmanifest">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="blog.css">
-
-    <!-- FONTAWESOME ICON-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    <link rel="stylesheet" href="simple-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <!-- GOOGLE FONT SACRAMENTO-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-
-    <!-- GOOGLE FONT ROBOTO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
-
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+    <link rel="shortcut icon" href="./image/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./image/favicon/apple-touch-icon.png">
 </head>
 
-<body>
-    <div class="top-bar container-fluid"></div>
-    <header class="container-fluid">
-        <a href="https://www.bugraarslan.com">
-            <h1 class="zoom">Buğra Arslan</h1>
-        </a>
+<body class="container">
+    <header class="row">
+        <ul class="col-12 left">
+            <li><a href="./index.html">
+                    <h3><i class="fa-solid fa-house"></i> Home</h3>
+                </a></li>
+            <li><a href="./gallery.html">
+                    <h3>Gallery</h3>
+                </a></li>
+        </ul>
     </header>
-    <main class="container">
-        <!-- SLİDER KISMI -->
-        <div class="row justify-content-center">
-            <hr class="col-lg-11 col-xl-9">
-            <div id="carousel" class="carousel carousel-dark slide col-lg-11 col-xl-9" data-bs-ride="carousel"
-                data-bs-interval="2500" data-bs-pause="hover">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/uzungol.jpg" class="d-block w-100" alt="1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="#" class="btn tag">Uzungöl, Çaykara</a>
-                            <!-- <p>Some representative placeholder content for the first slide.</p> -->
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/trabzon.jpg" class="d-block w-100" alt="2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="#" class="btn tag">Tanjant, Trabzon</a>
-                            <!-- <p>Some representative placeholder content for the second slide.</p> -->
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/rize.jpg" class="d-block w-100" alt="3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <a href="#" class="btn tag">Çamlıhemşin, Rize</a>
-                            <!-- <p>Some representative placeholder content for the third slide.</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="col-lg-11 col-xl-9" style="margin-top: 1%;">
+    <main class="row">
+        <div id="aboutTitle" class="col-8 title">
+            <h1>Hi!</h1>
+            <h2>I'm Buğra Arslan</h2>
+            <span id="aboutTitleChangeText"></span>
+            <ul id="aboutIcon" class="custom-btn"><br>
+                <li><a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/bugraars?tab=repositories" target="_blank"><i
+                            class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/bugraa.ars/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="mailto:aarslanbugra@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+            <br>
         </div>
-        <!-- ICERİK KISMI -->
-        <div class="row justify-content-center">
-            <!-- SOL (İÇERİK) TARAF -->
-            <div class="col-md-11 col-lg-7 col-xl-6">
-                <div class="container">
-                    <div class="row justify-content left-content ">
-                        <div class="col-12 col-md-5 media-div">
-                            <a href="https://github.com/Bugraa999/bugraarslan-com" target="_blank"><img
-                                    src="/img/github.jpg" class="media-box" alt="3"></a>
-                        </div>
-                        <div class="col-12 col-md-7 content-div">
-                            <h3>Github repository</h3>
-                            <a href="#" class="btn content-tag">#code</a> <a href="#"
-                                class="btn content-tag">#design</a>
-                            <p>Bu web sitesinin <strong>kaynak kodlarına</strong> Github üzerinden ulaşabilirsiniz.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row justify-content left-content ">
-                        <div class="col-12 col-md-5 media-div">
-                            <a href="https://www.pexels.com/tr-tr/@bugra-arslan-116282476" target="_blank"><img
-                                    src="/img/IMG_3297.JPG" class="media-box" alt="3"></a>
-                        </div>
-                        <div class="col-12 col-md-7 content-div">
-                            <h3>Pexels Koleksiyonum</h3>
-                            <a href="#" class="btn content-tag">#photo</a>
-                            <p>Çektiğim fotoğrafları <strong>pexels.com</strong>'a yüklüyorum. Ziyaret edebilir,
-                                telifsizce kullanabilirsiniz.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row justify-content left-content ">
-                        <div class="col-12 col-md-5 media-div">
-                            <a href="https://dribbble.com/shots/16575490-map4hope-mapocial-social-media"
-                                target="_blank"><img src="/img/map4hope.jpg" class="media-box" alt="3"></a>
-                        </div>
-                        <div class="col-12 col-md-7 content-div">
-                            <h3>Map4hope tasarım</h3>
-                            <a href="#" class="btn content-tag">#code</a> <a href="#"
-                                class="btn content-tag">#design</a> <a href="#" class="btn content-tag">#dribbble</a>
-                            <p>Eco-Friendly sosyal medya platform projesi <strong>"map4hope"</strong> için
-                                oluşturduğum tasarıma ulaşabilirsiniz.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row justify-content left-content ">
-                        <div class="col-12 col-md-5 media-div">
-                            <iframe class="media-box" width="560" height="315"
-                                src="https://www.youtube.com/embed/13BHK5zlZt0" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                        <div class="col-12 col-md-7 content-div">
-                            <h3>Mimoza Çiçeğim</h3>
-                            <a href="#" class="btn content-tag">#music</a>
-                            <p>Göynük Fen Lisesi mezuniyet programındaki <strong>sahnemizden</strong> ufak bir kesit
-                                -2017- &#128526
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- SAĞ (ASIDE) TARAF -->
-            <aside class="about-card col-md-11 col-lg-4 col-xl-3">
-                <div class="cards container">
-                    <div class="cards-head row justify-content-center align-middle">
-                        <img src="img/profile.jpeg" class="col-7" alt="cards-img" style="height: 58.33%;">
-                    </div>
-                    <div class="cards-title row justify-content-center">
-                        <h3>-Hakkımda-</h3>
-                    </div>
-                    <div class="cards-body row justify-content-center">
-                        <p>
-                            Merhaba ben <strong>Buğra Arslan</strong> <br>
-                            Yazılım geliştiriciyim. Front-end web development, fotoğrafçılık ve müzikle ilgileniyorum.
-                        </p>
-                        <hr>
-                        <p>
-                            Projelerimi ve çektiğim fotoğrafları paylaşıyor, youtube kanalımda söylediğim parçaları
-                            yayımlıyorum.
-                        </p>
-                        <hr>
-                        <h3>Takip Et</h3>
-                    </div>
-                    <div class="cards-link row justify-content">
-                        <a href="https://www.instagram.com/bugraa.ars/" target="_blank" class=" col-3 instagram"><i
-                                class="fab fa-instagram-square icon-lg zoom "></i></a>
-                        <a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/" target="_blank"
-                            class=" col-3 linkedin"><i class="fab fa-linkedin icon-lg zoom "></i></a>
-                        <a href="https://dribbble.com/bugraa999" target="_blank" class=" col-3 dribbble"><i
-                                class="fab fa-dribbble-square icon-lg zoom "></i></a>
-                        <a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A" target="_blank"
-                            class=" col-3 youtube"><i class="fab fa-youtube-square icon-lg zoom "></i></a>
-                    </div>
-                </div>
-                <div class="contact-cards container">
-                    <div class=" row justify-content">
-                            <a href="mailto:contact@bugraarslan.com" class="btn contact-form zoom">contact@bugraarslan.com</a>
-                    </div>
-                </div>
-                <!-- MAIL ADRESİNİ EKLEMEKTE KARARSIZ KALDIM -->
-                <!-- <div class="contact-cards container">
-                    <div class=" row justify-content">
-                        <a href="https://forms.gle/7UVc5aGVPtra1JRh7" class="btn contact-form zoom" target="_blank">İletişim | Contact</a> 
-                    </div>
-                </div> -->
-            </aside>
+        <div id="aboutImage" class="col-4 center">
+            <img src="./image/pp.png" alt="bugra arslan profile photo">
         </div>
+        <div id="aboutParagraph" class="col-12 center">
+            <p> I am 22 years old, I live in Antalya and I graduated from Suleyman Demirel University
+                Computer Engineering in 2022. I am on my way to become a successful web developer.</p>
+            <p>I work on this technologies; HTML,CSS,JavaScript(ES6+),React</p>
+        </div>
+        <div class="col-12">
+            <div class="center resumeDiv">
+                <a href="./document/Bugra Arslan Resume CV.pdf" download="Bugra Arslan resume-cv.pdf">For detailed
+                    information about me, you can reach my resume from this link. </a>
+            </div>
+        </div>
+        <div class="col-12 aboutProjects center">
+            <h4>Personal Projects</h4>
+            <div class="col-6 projectLink">
+                <a href="https://github.com/bugraars/afforestation.github.io">Afforestation calc app <i
+                        class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+            <div class="col-6 projectLink">
+                <a href="https://github.com/bugraars/todoApp.github.io">To-do app with bootstrap <i
+                        class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+            <div class="col-6 projectLink">
+                <a href="https://github.com/bugraars/calendarBasic">Basic calendar app <i
+                        class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+            <div class="col-6 projectLink">
+                <a href="https://github.com/bugraars/bugraarslan.github.io">Portfolio website <i
+                        class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+        </div>
+        </div>
+        <footer class="col-12 center"><br>
+            <p>You can find the source code for this website on <a href="https://github.com/bugraars?tab=repositories"
+                    target="_blank">Github</a>.</p>
+            <p id="copyright">© 2022 bugraarslan.com</p>
+        </footer>
     </main>
-    <footer class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h4>© COPYRIGHT 2021 | BUĞRA ARSLAN </h4>
-            </div>
-        </div>
-    </footer>
+    <script>
+        /**=======================================================About Title change text */
+        const aboutTitle = document.querySelector("#aboutTitleChangeText");
+        let texts = new Array();
+        texts.push("A front-end developer <i class='fa-solid fa-code'></i>");
+        texts.push("A photographer <i class='fa-solid fa-camera'></i>");
+        texts.push("A music-lover <i class='fa-solid fa-music'></i>");
+
+        let point = 0;
+        function changeTitle() {
+            aboutTitle.innerHTML = `<h3>${texts[point]}</h3>`
+            if (point < (texts.length - 1)) {
+                point++;
+            } else {
+                point = 0;
+            }
+        }
+        setInterval(changeTitle, 2000); /*Call it here*/
+        changeTitle();
+    </script>
+
 </body>
-<!-- SCRIPT FOR BOOTSTRAP -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
-<script src="blog.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
