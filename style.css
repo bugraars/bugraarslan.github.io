@@ -55,6 +55,15 @@ footer #copyright{
 .title h1,h2{
     display: inline-block;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--blue);
+}
 /* =============HOME PAGE============ */
 .custom-btn a{
     display: flex;
