@@ -16,6 +16,7 @@
 </head>
 
 <body class="container">
+    <i id="scrolltopbtn" class="fa-solid fa-circle-chevron-up scroll-top-btn" onclick="scrolltopbtn()"></i>
     <header class="row">
         <ul class="col-12 left">
             <li><a href="./index.html">
@@ -103,6 +104,13 @@
         }
         setInterval(changeTitle, 2000); /*Call it here*/
         changeTitle();
+
+        function scrolltopbtn(){
+            window.scrollTo({
+                top:0,
+                behavior:'smooth'
+            })
+        }
     </script>
 
 </body>

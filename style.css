@@ -8,6 +8,7 @@
     --yellow:#f7d708;
     --black:#2C272E;
     --blue:#1da1f2;
+
 }
 /* =============ALL PAGES============ */
 *{
@@ -63,6 +64,16 @@ footer #copyright{
 }
 ::-webkit-scrollbar-thumb{
     background: var(--blue);
+}
+.scroll-top-btn{
+    padding: 0px;
+    z-index: 99;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1.75rem;
+    color: var(--white);
+    cursor: pointer;
 }
 /* =============HOME PAGE============ */
 .custom-btn a{
