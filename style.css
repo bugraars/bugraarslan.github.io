@@ -72,8 +72,19 @@ footer #copyright{
     right: 10px;
     bottom: 10px;
     font-size: 1.75rem;
-    color: var(--white);
+    color: var(--blue);
     cursor: pointer;
+}
+.scroll-top-btn:hover{
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+.scroll-top-btn:active{
+    color: var(--bg-secondary);
+}
+::selection{
+    color: var(--bg-primary);
+    background-color: var(--white);
 }
 /* =============HOME PAGE============ */
 .custom-btn a{
@@ -105,6 +116,13 @@ footer #copyright{
 }
 .resumeDiv a:hover{
     text-decoration: underline !important;
+    animation: pulsateR 2s ease-in-out;
+}
+@keyframes pulsateR{
+    0%{
+        box-shadow: 
+        0 0 50px var(--bg-secondary);
+    }
 }
 .aboutProjects{
     background-color: var(--grey);
@@ -152,7 +170,13 @@ footer #copyright{
     display: inline-block;
 }
 .post-btn a:hover{
-    text-decoration: underline !important;
+    animation: pulsateB 3s ease-in-out;
+}
+@keyframes pulsateB{
+    0%{
+        box-shadow: 
+        0 0 25px var(--bg-secondary);
+    }
 }
 #post-photos img{
     width: 100%;
@@ -166,9 +190,17 @@ footer #copyright{
 .zoom:hover {
     transition: transform .3s;
     transform: scale(1.02);
-  }
+    animation: pulsateV 3s ease-in;
+}
+@keyframes pulsateV{
+    0%{
+        box-shadow: 
+        0 0 25px var(--bg-secondary);
+    }
+}
 .noneDisplay {
     display:none;
+    
 }
 
 
