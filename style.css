@@ -190,13 +190,6 @@ footer #copyright{
 .zoom:hover {
     transition: transform .3s;
     transform: scale(1.02);
-    animation: pulsateV 3s ease-in;
-}
-@keyframes pulsateV{
-    0%{
-        box-shadow: 
-        0 0 25px var(--bg-secondary);
-    }
 }
 .noneDisplay {
     display:none;
