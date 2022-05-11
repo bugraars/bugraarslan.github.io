@@ -14,6 +14,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* cursor: url(./image/pointer.png), auto; */
 }
 body{
     box-sizing: border-box;
@@ -61,16 +62,18 @@ footer #copyright{
 }
 ::-webkit-scrollbar-track{
     background: var(--bg-secondary);
+    border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb{
     background: var(--blue);
+    border-radius: 4px;
 }
 .scroll-top-btn{
     padding: 0px;
     z-index: 99;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 16px;
+    bottom: 16px;
     font-size: 1.75rem;
     color: var(--blue);
     cursor: pointer;
@@ -115,8 +118,18 @@ footer #copyright{
 }
 #aboutImage img{
     width: 216px;
+    padding: 2px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+#aboutParagraph{
+    background-color: var(--grey);
+    border-radius: .25rem;
+    padding: .75rem 0rem;
 }
 .resumeDiv{
+    margin: .75rem;
+    margin-bottom: 0rem;
     background-color: var(--bg-secondary);
     border-radius: .25rem;
     padding: 1rem;
