@@ -1,0 +1,15 @@
+.gallery-title {
+    color: var(--txt-opt);
+}
+
+.gallery-title a {
+    color: var(--txt);
+}
+
+.gallery-title a:hover {
+    text-decoration: underline !important;
+}
+
+.none-display {
+    display: none;
+}

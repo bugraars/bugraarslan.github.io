@@ -6,111 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buğra Arslan</title>
-    <link rel="stylesheet" href="simple-grid.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/simple-grid.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./image/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./image/favicon/apple-touch-icon.png">
 </head>
-
-<body class="container">
-    <i id="scrolltopbtn" class="fa-solid fa-circle-chevron-up scroll-top-btn" onclick="scrolltopbtn()"></i>
-    <header class="row">
-        <ul class="col-12 left">
-            <li><a href="./index.html">
-                    <h3><i class="fa-solid fa-house"></i> Home</h3>
-                </a></li>
-            <li><a href="./gallery.html">
-                    <h3>Gallery</h3>
-                </a></li>
-        </ul>
-    </header>
-    <main class="row">
-        <div id="aboutTitle" class="col-8 title">
-            <h1>Hi!</h1>
-            <h2>I'm Buğra Arslan</h2>
-            <span id="aboutTitleChangeText"></span>
-            <ul id="aboutIcon" class="custom-btn"><br>
-                <li><a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/" target="_blank"><i
-                            class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/bugraars?tab=repositories" target="_blank"><i
-                            class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured" target="_blank"><i
-                            class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://www.instagram.com/aarslanbugra/" target="_blank"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:aarslanbugra@outlook.com"><i class="fa-solid fa-envelope"></i></a></li>
-            </ul>
-        </div>
-        <div id="aboutImage" class="col-4 center">
-            <img src="./image/pp.png" alt="bugra arslan profile photo">
-        </div>
-        <div id="aboutParagraph" class="col-12 center">
-            <p>I am 22 years old, I live in Antalya and I'll graduate from computer engineering at Suleyman Demirel
-                University in 2022. I am interested in front end development area.</p>
-                <div class="center resumeDiv">
-                    <a href="./document/Bugra Arslan Resume CV.pdf" download="Bugra Arslan resume-cv.pdf">For detailed
-                        information about me, you can download my resume from this link.</a>
+<body>
+    <div class="container">
+        <header class="row">
+            <nav class="col-12">
+                <a href="index.html" class="selected">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#theme" id="theme-btn" ><i class="fa-solid fa-circle-half-stroke"></i></a>
+            </nav>
+        </header>
+        <br>
+        <main class="row">
+            <div id="about-me" class="col-12-sm col-3 center">
+                <img src="./image/bugra arslan.png" alt="Buğra Arslan Profile photo">
+            </div>
+            <div class="col-4 hidden-sm">
+                <!-- This div will be hidden when the screen is small -->
+            </div>
+            <div id="about-me-title" class="col-12-sm col-5 center">
+                <h2>-Buğra Arslan-</h2>
+                <span id="changing-text"></span>
+                <ul class="social-media">
+                    <li><a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/bugraars?tab=repositories" target="_blank"><i
+                                class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/aarslanbugra/" target="_blank"><i
+                                class="fa-brands fa-instagram-square"></i></a></li>
+                    <li><a href="mailto:aarslanbugra@outlook.com"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div id="about-me-txt" class="col-12-sm center">
+                <p>I am 23 years old, I live in Antalya and I'll graduate from computer engineering at Suleyman Demirel
+                    University in 2022. I am interested in front-end development area.</p>
+            </div>
+            <div id="resume" class="col-12 center">
+                <a href="./document/Bugra Arslan Resume CV.pdf" download="Bugra Arslan resume-cv.pdf">For detailed
+                    information about me, you can download my resume from this link.</a>
+            </div>
+            <div class="col-12 my-projects center">
+                <h3>-Personal Projects-</h3>
+                <div class="col-4 project-link">
+                    <a href="https://github.com/bugraars/afforestation.github.io"><img
+                            src="image\project-img\afforestation.png" class="zoom" alt="afforestation.png"><br>
+                        Afforestation calculator</a>
                 </div>
-        </div>
-        <div class="col-12">
-            
-        </div>
-        <div class="col-12 aboutProjects center">
-            <h4>Personal Projects</h4>
-            <div class="col-4 projectLink">
-                <a href="https://github.com/bugraars/afforestation.github.io"><img
-                        src="image\project-img\afforestation.png" class="zoom" alt="afforestation.png"><br>
-                    Afforestation calcu app <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                <div class="col-4 project-link">
+                    <a href="https://github.com/bugraars/todoApp.github.io"><img src="image\project-img\todoApp.png"
+                            class="zoom" alt="To-do app.png"><br>To-do project</a>
+                </div>
+                <div class="col-4 project-link">
+                    <a href="https://github.com/bugraars/calendarBasic"><img src="image\project-img\calendar.png"
+                            class="zoom" alt="calendar.png"><br>Basic calendar</a>
+                </div>
             </div>
-            <div class="col-4 projectLink">
-                <a href="https://github.com/bugraars/todoApp.github.io"><img src="image\project-img\todoApp.png"
-                        class="zoom" alt="To-do app.png"><br>To-do app with bootstrap <i
-                        class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-            <div class="col-4 projectLink">
-                <a href="https://github.com/bugraars/calendarBasic"><img src="image\project-img\calendar.png"
-                        class="zoom" alt="calendar.png"><br>Basic calendar app <i
-                        class="fa-solid fa-square-arrow-up-right"></i></a>
-            </div>
-        </div>
-        </div>
-        <footer class="col-12 center"><br>
-            <p>You can find the source code for this website on <a href="https://github.com/bugraars?tab=repositories"
-                    target="_blank">Github</a></p>
-            <p id="copyright">© 2022 bugraarslan.com</p>
-        </footer>
-    </main>
-    <script>
-        /**=======================================================About Title change text */
-        const aboutTitle = document.querySelector("#aboutTitleChangeText");
-        let texts = new Array();
-        texts.push(" a software developer <i class='fa-solid fa-code'></i>");
-        texts.push(" a photographer <i class='fa-solid fa-camera'></i>");
-        texts.push(" a music-lover <i class='fa-solid fa-music'></i>");
-
-        let point = 0;
-        function changeTitle() {
-            aboutTitle.innerHTML = `<h3>${texts[point]}</h3>`
-            if (point < (texts.length - 1)) {
-                point++;
-            } else {
-                point = 0;
-            }
-        }
-        setInterval(changeTitle, 1000); /*Call it here*/
-        changeTitle();
-
-        function scrolltopbtn() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            })
-        }
-    </script>
-
+            <footer class="col-12 center"><br>
+                <p>You can find the source code for this website on <a
+                        href="https://github.com/bugraars?tab=repositories" target="_blank">Github</a></p>
+                <p id="copyright"><small>www.bugraarslan.com</small></p>
+            </footer>
+        </main>
+    </div>
 </body>
+
+<script src="./javascript/index.js"></script>
+<script src="./javascript/app.js"></script>
 
 </html>

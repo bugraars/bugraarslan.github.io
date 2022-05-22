@@ -6,115 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buğra Arslan</title>
-    <link rel="stylesheet" href="simple-grid.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/simple-grid.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./image/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./image/favicon/apple-touch-icon.png">
+        <link rel="shortcut icon" href="./image/favicon/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="./image/favicon/apple-touch-icon.png">
 </head>
 
-<body class="container">
-    <i id="scrolltopbtn" class="fa-solid fa-circle-chevron-up scroll-top-btn" onclick="scrolltopbtn()"></i>
-    <header class="row">
-        <ul class="col-12 left">
-            <li><a href="./index.html">
-                    <h3>Home</h3>
-                </a></li>
-            <li><a href="./gallery.html">
-                    <h3><i class="fa-solid fa-image"></i> Gallery</h3>
-                </a></li>
-        </ul>
-    </header>
-    <main class="row">
-        <div id="blogTitle" class="col-12 title">
-            <h1>My!</h1>
-            <h2>Photos,Videos</h2>
-            <h3>Besides web development I share my photos and videos.</h3>
-            <p>Scroll down to see my gallery! Visit ⟶ <a href="https://www.pexels.com/tr-tr/@bugra-arslan-116282476"
-                    target="_blank">Pexels</a> <a href="https://www.instagram.com/aarslanbugra/"
-                    target="_blank">Instagram</a> <a
-                    href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured" target="_blank">Youtube</a>
-            </p><br>
-        </div>
-        <ul class="post-btn  center">
-            <li id="showPhotos" class="post-btn col-3" onclick="showPhotos()">
-                <a href="#photos"><i class="fa-solid fa-image"></i> Photos</a>
-            </li>
-            <li id="showVideos" class="post-btn col-3" onclick="showVideos()">
-                <a href="#videos"><i class="fa-solid fa-image"></i> Videos</a>
-            </li>
-        </ul>
+<body>
+    <div class="container">
+        <header class="row">
+            <nav class="col-12">
+                <a href="index.html">Home</a>
+                <a href="gallery.html" class="selected">Gallery</a>
+                <a id="theme-btn"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            </nav>
+        </header>
+        <br>
+        <main class="row">
+            <div class="gallery-title col-12 center">
+                <p>Besides web development I share my photos, <strong>Scroll down</strong> <i
+                        class="fa-solid fa-arrow-down"></i></p>
+                <p>Visit ⟶ <a href="https://www.pexels.com/tr-tr/@bugra-arslan-116282476" target="_blank">Pexels</a>
+                    <a href="https://www.instagram.com/aarslanbugra/" target="_blank">Instagram</a>
+                    <a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured"
+                        target="_blank">Youtube</a>
+                </p>
+            </div>
+            <!-- <div class="col-12 center">
+            <button id="show-photos" class="btn-post col-3" onclick="showPhotos()">
+                Photos
+            </button>
+            <button id="show-videos" class="btn-post col-3" onclick="showVideos()">
+                Videos
+            </button>
+            </div> -->
+            <div id="post-photos" class="col-12">
+                <hr>
+                <ul class="col-4">
+                    <li><img src="./image/item10.jpeg" class="zoom" alt=""></li>
+                    <li><img src="./image/item11.jpeg" class="zoom" alt=""></li>
+                    <li><img src="./image/item12.jpeg" class="zoom" loading="lazy" alt=""></li>
+                </ul>
+                <ul class="col-4">
+                    <li><img src="./image/item20.jpeg" class="zoom" alt=""></li>
+                    <li><img src="./image/item21.jpeg" class="zoom" loading="lazy" alt=""></li>
+                    <li><img src="./image/item22.jpeg" class="zoom" loading="lazy" alt=""></li>
 
-        <div id="post-photos" class="col-12">
-            <hr>
-            <ul class="col-4 photos-column">
-                <li><img src="./image/item10.jpeg" class="zoom" alt=""></li>
-                <li><img src="./image/item11.jpeg" class="zoom" alt=""></li>
-                <li><img src="./image/item12.jpeg" class="zoom" loading="lazy" alt=""></li>
-
-
-            </ul>
-            <ul class="col-4 photos-column">
-                <li><img src="./image/item20.jpeg" class="zoom" alt=""></li>
-                <li><img src="./image/item21.jpeg" class="zoom" loading="lazy" alt=""></li>
-                <li><img src="./image/item22.jpeg" class="zoom" loading="lazy" alt=""></li>
-
-            </ul>
-            <ul class="col-4 photos-column">
-                <li><img src="./image/item30.jpeg" class="zoom" alt=""></li>
-                <li><img src="./image/item31.jpeg" class="zoom" loading="lazy" alt=""></li>
-                <li><img src="./image/item32.jpeg" class="zoom" loading="lazy" alt=""></li>
-
-            </ul>
-        </div>
-        <div id="post-videos" class="col-12 noneDisplay">
-            <hr>
-            <ul class="col-4 videos-column">
-                <li><video playsinline autoplay muted loop class="zoom">
-                        <source src="./videos/vid1.mp4" type="video/mp4" />
-                    </video></li>
-            </ul>
-            <ul class="col-4 videos-column">
-                <li><video playsinline autoplay muted loop class="zoom">
-                        <source src="./videos/vid2.mp4" type="video/mp4" />
-                    </video></li>
-            </ul>
-            <ul class="col-4 videos-column">
-                <li><video playsinline autoplay muted loop class="zoom">
-                        <source src="./videos/vid3.mp4" type="video/mp4" />
-                    </video></li>
-            </ul>
-        </div>
-
-        <footer class="col-12 center">
-            <p>You can find the source code for this website on <a href="https://github.com/bugraars?tab=repositories"
-                    target="_blank">Github</a>.</p>
-            <p id="copyright">© 2022 bugraarslan.com</p>
-        </footer>
-    </main>
-    <script>
-        /**=======================================================Photo-Video btn */
-        const postPhotos = document.querySelector("#post-photos");
-        const postVideos = document.querySelector("#post-videos");
-
-        function showVideos() {
-            postVideos.classList.remove('noneDisplay');
-            postPhotos.classList.add('noneDisplay');
-        }
-        function showPhotos() {
-            postPhotos.classList.remove('noneDisplay');
-            postVideos.classList.add('noneDisplay');
-        }
-
-        function scrolltopbtn(){
-            window.scrollTo({
-                top:0,
-                behavior:'smooth'
-            })
-        }
-    </script>
+                </ul>
+                <ul class="col-4">
+                    <li><img src="./image/item30.jpeg" class="zoom" alt=""></li>
+                    <li><img src="./image/item31.jpeg" class="zoom" loading="lazy" alt=""></li>
+                    <li><img src="./image/item32.jpeg" class="zoom" loading="lazy" alt=""></li>
+                </ul>
+            </div>
+            <footer class="col-12 center">
+                <hr>
+                <p>You can find the source code for this website on <a
+                        href="https://github.com/bugraars?tab=repositories" target="_blank">Github</a></p>
+                <p id="copyright"><small>www.bugraarslan.com</small></p>
+            </footer>
+        </main>
+    </div>
 </body>
+<script src="./javascript/gallery.js"></script>
+<script src="./javascript/app.js"></script>
 
 </html>
