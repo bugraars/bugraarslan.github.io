@@ -3,8 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('mode','');
 });
 document.getElementById("theme-btn").addEventListener(('click'), () => {
-    document.body.classList.toggle("dark");
-    localStorage.setItem('mode', document.body.classList);
+    document.body.classList.toggle('dark');
+    localStorage.setItem('mode',document.body.classList);
 });
 
 if (localStorage.getItem('mode') != '') {
