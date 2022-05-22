@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    document.body.localStorage.setItem('mode');
+    document.body.localStorage.setItem('mode','');
     console.log('Page Loaded.');
 });
 document.getElementById("theme-btn").addEventListener(('click'), () => {
