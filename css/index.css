@@ -42,6 +42,8 @@
 .my-projects{
     border-radius: .25rem;
     padding: .75rem 0rem;
+    border: 1px solid var(--border);
+
 }
 .my-projects h3{
     margin-bottom: .5rem;
