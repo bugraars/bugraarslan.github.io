@@ -4,6 +4,10 @@
     border: 1px solid;
     border-radius: 50%;
 }
+#about-me-title h2{
+    color: var(--txt);
+    text-shadow: var(--border) 4px 4px;
+}
 .social-media{
     margin-top: .5rem;
 }
