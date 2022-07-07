@@ -74,13 +74,13 @@
     width: 100vw;
     z-index: 1;
     overflow: hidden;
-    background-color: var(--txt);
+    background-color: var(--bg);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .loader h4{
-    color: var(--bg);
+    color: var(--txt);
 }
 .loader img{
     width: 32px;
