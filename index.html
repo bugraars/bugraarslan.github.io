@@ -5,154 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buğra Arslan "Blog" </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./image/apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="style/x-largedevice.css">
+    <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 721px)"
+        href="style/largedevice.css">
+    <link rel="stylesheet" media="only screen and (max-width: 720px) and (min-width: 481px)"
+        href="style/mediumdevice.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px) and (min-width: 321px)"
+        href="style/smalldevice.css">
+    <link rel="stylesheet" media="only screen and (max-width: 320px) and (min-width: 000px)"
+        href="style/minidevice.css">
+
+    <title>Document</title>
 </head>
 
 <body>
+    <div id="loading">
+        <img id="loading-image" src="./img/favicon/apple-touch-icon.png" alt="pageloader">
+    </div>
     <header>
-        <ul id="nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
     </header>
     <main>
-        <div id="home">
+        <menu>
+            <ul id="navbar">
+                <li><a href="#mainTitle">Home</a></li>
+                <li><a href="#personalPage">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#theme" id="theme-btn" onclick="setTheme()"><i
+                            class="fa-solid fa-circle-half-stroke"></i></a></li>
+            </ul>
+        </menu>
+        <div id="mainTitle">
             <div>
                 <h2>Hello, I'm</h2>
-                <span id="changing-text" class="center"></span>
+                <span id="mainTitleText" class="center"></span>
             </div>
         </div>
-        <div id="about-me">
-            <div class="flex-container">
-                <div class="flex-item-left">
-                    <div class="about-photo">
-                        <img id="picture" src="./pp.png" alt="Bugra Arslan">
+        <div id="personalPage">
+            <div id="aboutMe">
+                <div>
+                    <img id="profilePicture" src="./img/profilPicture.png" alt="Bugra Arslan">
+                </div>
+                <h1>Buğra Arslan</h1>
+                <span>
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a></li>
+                            <li><a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a></li>
+                            <li><a href="https://www.instagram.com/iambugraarslan" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a></li>
+                            <li><a href="https://twitter.com/bugraa_arslan" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a></li>
+                            <li><a href="http://github.com/bugraars" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i>
+                                </a></li>
+                        </ul>
                     </div>
-                    <div class="about-text">
-                        <h1 id="title">Buğra Arslan</h1>
-                        <span id="location">
-                            <i class="fa-solid fa-location-dot"></i> Antalya, Turkey
-                        </span>
-                        <footer><h4>My Social Media Links</h4>
-                            <ul>
-                                <li class="social"><a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <h3><i class="fa-brands fa-youtube"></i></h3>
-                                    </a></li>
-                                <li class="social"><a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <h3><i class="fa-brands fa-linkedin"></i></h3>
-                                    </a></li>
-                                <li class="social"><a href="https://www.instagram.com/bugraa.ars" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><i class="fa-brands fa-instagram"></i></h3>
-                                    </a></li>
-                                <li class="social"><a href="https://twitter.com/bugraa_arslan" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <h3><i class="fa-brands fa-twitter"></i></h3>
-                                    </a></li>
-                                <li class="social"><a href="http://github.com/bugraars" target="_blank" rel="noopener noreferrer">
-                                        <h3> <i class="fa-brands fa-github"></i></h3>
-                                    </a></li>
-                            </ul></footer>
-                        <p id="text">Hey👋 I'm a Jr.web developer interested in front-end
-                            development. I graduated from the Department of Computer
-                            Engineering at Suleyman Demirel University in 2022.
-                        </p>
-                    </div>
-                    <a class="button-link" href="./Bugra Arslan CV.pdf">
+                    <p>Hey👋 I'm a Jr.web developer interested in front-end
+                        development. I graduated from the Department of Computer
+                        Engineering at Suleyman Demirel University.
+                    </p>
+                    <a class="button" href="./Bugra Arslan CV.pdf">
                         View my CV
                     </a>
+                </span>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <a rel="noopener noreferrer" href="https://bugraars.github.io/todoApp.github.io/" target="_blank">
+                        <img class="zoom" src="./img/project/webTodoApp.gif" alt="project1">
+                        <h3>To-do app</h3><br>
+                    </a>
                 </div>
-                <div class="flex-item-right">
-                    <div class="flex-item-jr">
-                        <img src="./project-img/todoApp.png" alt="Avatar">
-                        <div class="link">
-                            <a href="https://github.com/bugraars/todoApp.github.io" class="text" target="_blank">To
-                                Do</a>
-                        </div>
-                    </div>
-                    <div class="flex-item-jr">
-                        <img src="./project-img/afforestation.png" alt="Avatar">
-                        <div class="link">
-                            <a href="https://github.com/bugraars/afforestation.github.io" class="text"
-                                target="_blank">Afforestation</a>
-                        </div>
-                    </div>
+                <div class="column">
+                    <a rel="noopener noreferrer" href="https://bugraars.github.io/afforestation.github.io/" target="_blank">
+                        <img class="zoom" src="./img/project/afforestionApp.gif" alt="project1">
+                        <h3>Afforestion</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-                    <div class="flex-item-jr">
-                        <img src="./project-img/linktree.png" alt="Avatar">
-                        <div class="link">
-                            <a href="https://github.com/bugraars/linktree.github.io" class="text"
-                                target="_blank">Linktree</a>
-                        </div>
-                    </div>
-                    <div class="flex-item-jr">
-                        <img src="./project-img/blogsite.png" alt="Avatar">
-                        <div class="link">
-                            <a href="https://github.com/bugraars" class="text" target="_blank">Blog Site</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="contact">
-            <div class="form-container">
-                <h1>Contact Form</h1>
-                <form target="_blank" action="https://formsubmit.co/aarslanbugra@gmail.com" method="POST">
-                    <div class="form-group">
-                        <div class="form">
-                            <div class="form-item">
-                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                            </div>
-                            <div class="form-item">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address"
-                                    required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" class="form-control" name="message" rows="8"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="button-link">SEND</button>
-                </form>
-            </div>
-            <footer>
-                <h4>My Social Media Links</h4>
-                <ul>
-                    <li class="social"><a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured"
-                            target="_blank" rel="noopener noreferrer">
-                            <h3><i class="fa-brands fa-youtube"></i></h3>
-                        </a></li>
-                    <li class="social"><a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/"
-                            target="_blank" rel="noopener noreferrer">
-                            <h3><i class="fa-brands fa-linkedin"></i></h3>
-                        </a></li>
-                    <li class="social"><a href="https://www.instagram.com/bugraa.ars" target="_blank"
-                            rel="noopener noreferrer">
-                            <h3><i class="fa-brands fa-instagram"></i></h3>
-                        </a></li>
-                    <li class="social"><a href="https://twitter.com/bugraa_arslan" target="_blank"
-                            rel="noopener noreferrer">
-                            <h3><i class="fa-brands fa-twitter"></i></h3>
-                        </a></li>
-                    <li class="social"><a href="http://github.com/bugraars" target="_blank" rel="noopener noreferrer">
-                            <h3> <i class="fa-brands fa-github"></i></h3>
-                        </a></li>
-                </ul>
-            </footer>
-        </div>
     </main>
+    <footer id="contact">
+        <div class="form-container">
+            <h1>Contact Form</h1>
+            <form target="_blank" action="https://formsubmit.co/aarslanbugra@gmail.com" method="POST">
+                <div class="form-group">
+                    <div class="form">
+                        <div class="form-item">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-item">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" class="form-control" name="message" rows="8"
+                        required></textarea>
+                </div>
+                <button type="submit" class="button">SEND</button>
+            </form>
+        </div>
+        <h4>my social media accounts</h4>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCfv49ebZiucpXOEpFmRAa0A/featured" target="_blank"
+                        rel="noopener noreferrer">
+                        <h3><i class="fa-brands fa-youtube"></i></h3>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/bu%C4%9Fra-arslan-7186a0180/" target="_blank"
+                        rel="noopener noreferrer">
+                        <h3><i class="fa-brands fa-linkedin"></i></h3>
+                    </a></li>
+                <li><a href="https://www.instagram.com/iambugraarslan" target="_blank" rel="noopener noreferrer">
+                        <h3><i class="fa-brands fa-instagram"></i></h3>
+                    </a></li>
+                <li><a href="https://twitter.com/bugraa_arslan" target="_blank" rel="noopener noreferrer">
+                        <h3><i class="fa-brands fa-twitter"></i></h3>
+                    </a></li>
+                <li><a href="http://github.com/bugraars" target="_blank" rel="noopener noreferrer">
+                        <h3> <i class="fa-brands fa-github"></i></h3>
+                    </a></li>
+            </ul>
+        </div>
 
+    </footer>
 </body>
-<script src="./app.js"></script>
+<script src="app.js"></script>
 
 </html>
